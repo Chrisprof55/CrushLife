@@ -1,67 +1,30 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Donut Entry App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
-    <style>
-        /* Ensure the body takes up the full viewport */
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        /* Full-screen video background */
-        .video-background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ensures the video covers the screen */
-            z-index: -1; /* Send the video to the background */
-        }
-
-        /* Content styling */
-        .content {
-            position: relative;
-            z-index: 1; /* Ensure the content appears above the video */
-            text-align: center;
-            color: white; /* White text for visibility */
-            font-family: Arial, sans-serif;
-        }
-    </style>
-
 </head>
-  <!-- Video Background -->
-  <video class="video-background" autoplay muted loop>
-    <source src="miniholes.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-        <h1>Welcome è Bem-vindo</h1>
+<body>
+    <div class="container">
+        <h1>Numerós</h1>
 
+        <label for="storeDropdown">Select Store:</label>
+        <select id="storeDropdown"></select>
 
-<H1> Contact numbers:</H1>
-<ul>Chris Little: 915 943 960</ul>
-<ul>Samira Hassan: 931 763 232</ul>
+        <label for="timeDropdown">Select Time:</label>
+        <select id="timeDropdown"></select>
 
-<!-- <img src="scoot.jpeg" alt="Description of the image" width="300"> -->
+        <div id="donutList">
+            <!-- Donut list inputs will be dynamically added here -->
+        </div>
 
+        <label for="userName">Nome:</label>
+        <input type="text" id="userName" placeholder="Nome" required>
 
-<h1>Address</h1>
-<p>Av. Antonio Augusto de Aguiar 140E, Lisbon, Portugal 1050-021</p>
-
-
-
-
-
+        <button id="submitButton">Enviar</button>
+    </div>
+    <script src="script.js"></script>
 </body>
-
-
-
 </html>
