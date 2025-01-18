@@ -84,7 +84,7 @@ submitButton.addEventListener('click', () => {
         userName: userName,
         donuts: donutData,
     };
-
+    console.log("Payload being sent:", payload);
     // Send to Google Apps Script endpoint
     fetch('https://script.googleusercontent.com/macros/echo?user_content_key=1E0-05xe8cOqTKbMT6QYZaAg-mqWGfcUpNwWDrL2oaV6clf27lWl1WI9HNmFbHib0HYSWMLeWsQjuMH3SfPjwOZop4nOHpedm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnAirmmhNyo6pJFynEaz7R4l_L-misxQpaerqEnNiWO-GbAOeLsCin7Ucif00torLjysw_Q9tMcb8GQLJ3ZlaPC25FnDf3-AbVQ&lib=MzKO87ON7f518N0qiTfvr8_ZBGI2UAf_X', {
         method: 'POST',
